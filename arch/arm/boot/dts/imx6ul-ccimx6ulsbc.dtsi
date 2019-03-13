@@ -272,62 +272,16 @@
 				clock-frequency = <33260000>;
 				hactive = <800>;
 				vactive = <480>;
-				hfront-porch = <50>;
-				hback-porch = <0>;
-				hsync-len = <128>;
-				vback-porch = <25>;
-				vfront-porch = <10>;
+				hfront-porch = <210>;
+				hback-porch = <46>;
+				hsync-len = <20>;
+				vback-porch = <23>;
+				vfront-porch = <22>;
 				vsync-len = <10>;
 				hsync-active = <0>;
 				vsync-active = <0>;
 				de-active = <1>;
-				pixelclk-active = <0>;
-			};
-		};
-	};
-
-	f10a0102: display@1 {
-		bits-per-pixel = <16>;
-		bus-width = <18>;
-
-		display-timings {
-			native-mode = <&timing1>;
-			timing1: timing1 {
-				clock-frequency = <45000000>;
-				hactive = <1024>;
-				vactive = <600>;
-				hfront-porch = <10>;
-				hback-porch = <0>;
-				hsync-len = <136 176 216>;
-				vback-porch = <0>;
-				vfront-porch = <0>;
-				vsync-len = <12 25 38>;
-				de-active = <1>;
 				pixelclk-active = <1>;
-			};
-		};
-	};
-
-	g101evn010: display@2 {
-		bits-per-pixel = <16>;
-		bus-width = <18>;
-
-		display-timings {
-			native-mode = <&timing3>;
-			timing3: timing3 {
-				clock-frequency = <68930000>;
-				hactive = <1280>;
-				vactive = <800>;
-				hfront-porch = <120>;
-				hback-porch = <0>;
-				hsync-len = <8>;
-				vback-porch = <10>;
-				vfront-porch = <0>;
-				vsync-len = <6>;
-				hsync-active = <1>;
-				vsync-active = <1>;
-				de-active = <1>;
-				pixelclk-active = <0>;
 			};
 		};
 	};
